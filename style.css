@@ -44,7 +44,7 @@ header p {
     color: #b3d9ff;
 }
 
-/* Навигация — Flexbox */
+/* Flexbox */
 .main-nav {
     margin-top: 15px;
 }
@@ -191,7 +191,6 @@ textarea:focus {
     background-color: var(--status-progress);
 }
 
-/* Методы — Grid дашборд */
 .methods-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -242,7 +241,6 @@ textarea:focus {
     line-height: 1.5;
 }
 
-/* Карточки проектов */
 .projects-list {
     list-style-position: inside;
     padding-left: 0;
@@ -284,7 +282,6 @@ textarea:focus {
     opacity: 0.6;
 }
 
-/* Aside — матовое стекло */
 aside {
     background-color: rgba(26, 58, 92, 0.45);
     backdrop-filter: blur(8px);
@@ -319,7 +316,6 @@ footer {
     color: var(--accent-color);
 }
 
-/* Адаптивность — планшеты */
 @media (max-width: 768px) {
     .main-nav ul {
         flex-direction: column;
@@ -338,7 +334,6 @@ footer {
     }
 }
 
-/* Адаптивность — мобильные */
 @media (max-width: 480px) {
     body {
         margin: 10px;
