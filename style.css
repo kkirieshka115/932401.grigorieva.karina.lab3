@@ -44,7 +44,6 @@ header p {
     color: #b3d9ff;
 }
 
-/* Flexbox */
 .main-nav {
     margin-top: 15px;
 }
@@ -144,7 +143,6 @@ textarea:focus {
     outline: 2px solid var(--accent-color);
 }
 
-/* Гипотезы — Flexbox карточки */
 .hypotheses-grid {
     display: flex;
     flex-wrap: wrap;
@@ -152,8 +150,7 @@ textarea:focus {
 }
 
 .hypothesis-card {
-    flex: 1 1 calc(33.333% - 15px);
-    min-width: 250px;
+    flex: 1 1 calc((100% - 30px) / 3);
     background-color: #ffffff;
     border: 1px solid var(--border-color);
     padding: 15px;
@@ -206,7 +203,7 @@ textarea:focus {
 }
 
 .method-icon {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -318,15 +315,11 @@ footer {
 
 @media (max-width: 768px) {
     .main-nav ul {
-        flex-direction: column;
-    }
-
-    .hypotheses-grid {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .hypothesis-card {
-        flex: 1 1 100%;
+        flex: 1 1 calc((100% - 15px) / 2);
     }
 
     .methods-grid {
@@ -337,6 +330,10 @@ footer {
 @media (max-width: 480px) {
     body {
         margin: 10px;
+    }
+
+    .hypothesis-card {
+        flex: 1 1 100%;
     }
 
     .methods-grid {
